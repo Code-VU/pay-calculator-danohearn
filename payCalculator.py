@@ -2,10 +2,10 @@ def calculatePay():
     # Implement your solution in between the two comment blocks
     print("calculating pay")
     # This first line is provided for you
-    hrs = input("Enter Hours:")
+    hrs = input("Enter Hours: ")
     rate = input("Enter Rate: ")
-    gross pay = hrs*rate
-    print("Pay:", gross pay)
+    pay = hrs*rate
+    print("Pay: ",pay)
     # end assignment
 
 ## if you want to test locally before you try to sync
