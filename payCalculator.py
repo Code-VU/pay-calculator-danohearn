@@ -7,15 +7,18 @@ def calculatePay():
     try:
         frate = float(rate)
         fhrs = float(hrs)
-        if fhrs > 40 :
-            otp = (fhrs - 40) * (frate * 1.5)
-            reg_rate = 40 * frate
-            grossPay = otp + reg_rate
-        else:
-            grossPay = frate * fhrs
-        print(grossPay)
     except:
-        print("Error please enter numeric input")   
+        print("Error, please enter numeric input")
+        quit()
+
+    if fhrs > 40.0 :
+        otp = (fhrs - 40) * (frate * 1.5)
+        reg_rate = 40 * frate
+        grossPay = otp + reg_rate
+    else:
+        grossPay = frate * fhrs
+    print(grossPay)
+       
 
     # end assignment
 
