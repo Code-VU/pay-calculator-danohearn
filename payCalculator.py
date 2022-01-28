@@ -8,7 +8,7 @@ def calculatePay():
         frate = float(rate)
         fhrs = float(hrs)
         if fhrs > 40 :
-            otp = (fhrs - 40) * (frate * 0.5)
+            otp = (fhrs - 40) * (frate * 1.5)
             reg_rate = 40 * frate
             grossPay = otp + reg_rate
         else:
