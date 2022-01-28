@@ -2,10 +2,14 @@ def calculatePay():
     # Implement your solution in between the two comment blocks
     print("calculating pay")
     # This first line is provided for you
-    hrs = input("Enter Hours: ")
     rate = input("Enter Rate: ")
-
-    grossPay = float(hrs)*float(rate)
+    hrs = input("Enter Hours: ")
+    if hrs > 40 :
+        otp = (hrs - 40)*(rate*1.5)
+        reg_rate = 40*rate
+        grossPay = otp + reg_rate
+    else:
+        grossPay = float(hrs)*float(rate)
 
     print(grossPay)
 
