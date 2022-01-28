@@ -12,7 +12,7 @@ def calculatePay():
             reg_rate = 40 * frate
             grossPay = otp + reg_rate
         else:
-            grossPay = frate*fhrs
+            grossPay = frate * fhrs
         print(grossPay)
     except:
         print("Error please enter numeric input")   
